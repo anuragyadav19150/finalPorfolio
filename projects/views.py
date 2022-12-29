@@ -54,8 +54,8 @@ def index(request):
 
             },
             "3": {
-                "firstLine": "Traffic Rule Violation Detection",
-                "description": "We detect traffic violations like over-speeding and crossing the Red light Signal using\r\ncomputer vision and Image processing.",
+                "firstLine": "Traffic Rule Violation ",
+                "description": "We detect traffic violations like over-speeding and crossing the Red light Signal using\r\ncomputer vision .",
                 "github": "https://github.com/anuragyadav19150/Traffic-Rule-Violation-detection",
                "image": "../static/projects/ms.png",
                 "techStack":"Python , computer vision",
@@ -65,7 +65,7 @@ def index(request):
             },
             "4": {
                 "firstLine": "Color Switch",
-                "description": "Made a clone of the famous game Color Switch with JavaFX in JAVA.",
+                "description": "Made a clone of the famous game Color Switch with JavaFX in JAVA.Used many oop's features ",
                 "github": "https://github.com/anuragyadav19150/apFinal",
                 "image": "../static/projects/ms.png",
                 "techStack":"Java , Java FX",
@@ -84,7 +84,7 @@ def index(request):
             },
             "6": {
                 "firstLine": "GRAM VISION",
-                "description": "Developing a user-friendly, Easy to use Mobile App, using Flutter, Dart, and\r\nGoogle Firebase(for backend), for the people of a village.",
+                "description": "Developing a user-friendly, Easy to use Mobile App, using Flutter, Dart, and\r\nGoogle Firebase(for backend).",
                 "github": "https://github.com/anuragyadav19150/GramVision",
                 "image": "../static/projects/ms.png",
                 "techStack":"Futter , Dart , Android Studio , Google fire base",
