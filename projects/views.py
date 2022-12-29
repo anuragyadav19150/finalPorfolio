@@ -34,31 +34,37 @@ def index(request):
     # print("sending")
     data = {
         "projectInfo": {
-            "1": {
+            "2": {
+                "firstLine": "Microsoft Teams Engage",
+                "description": "I made this Microsoft Teams Clone App in Microsoft Engage 2021.You can download and run this app.",
+                "github": "https://github.com/anuragyadav19150/ms_engage_2021",
+                "image": "NA"
+            },
+            "2": {
                 "firstLine": "Shopify - Full stack",
                 "description": "Designed a system that maintains the database of a Shopping website along with its\r\nFully Functional website.",
                 "github": "https://github.com/anuragyadav19150/Shopify_DBMS",
                 "image": "NA"
             },
-            "2": {
+            "3": {
                 "firstLine": "Traffic Rule Violation Detection",
                 "description": "We detect traffic violations like over-speeding and crossing the Red light Signal using\r\ncomputer vision and Image processing.",
                 "github": "https://github.com/anuragyadav19150/Traffic-Rule-Violation-detection",
                 "image": "NA"
             },
-            "3": {
+            "4": {
                 "firstLine": "Color Switch",
                 "description": "Made a clone of the famous game Color Switch with JavaFX in JAVA",
                 "github": "https://github.com/anuragyadav19150/apFinal",
                 "image": "NA"
             },
-            "4": {
+            "5": {
                 "firstLine": "Dream Team Creator",
                 "description": "We made a model that will make a team which will win the tournament by using the\r\ndata present online",
                 "github": "https://github.com/anuragyadav19150/Machine_Learning_Final_Project",
                 "image": "NA"
             },
-            "5": {
+            "6": {
                 "firstLine": "GRAM VISION",
                 "description": "Developing a user-friendly, Easy to use Mobile App, using Flutter, Dart, and\r\nGoogle Firebase(for backend), for the people of a village.",
                 "github": "https://github.com/anuragyadav19150/GramVision",
