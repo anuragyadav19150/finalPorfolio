@@ -316,9 +316,9 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
         background-position: center;
         position: relative;
     }
-    .projectsBox:hover{
-      transform: scale(1.1);
-      background: linear-gradient(to right,rgba(245, 245, 245, 0.904),rgb(164, 200, 238)), url(../static/images/background_info.svg);
+    .prohv:hover{
+      transform: scale(1.05);
+     
     }
 
     .amaze:hover{
@@ -507,33 +507,14 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
                     
                     <div class="skills__skill">{{skill}}</div>
                    {% endfor %} 
-                    <!-- <div class="skills__skill">C++</div>
-                    <div class="skills__skill">Python</div>
-                    <div class="skills__skill">Java</div>
-                    <div class="skills__skill">React</div>
-                    <div class="skills__skill">Django</div>
-                    <div class="skills__skill">Django REST Framework</div>
-                    <div class="skills__skill">JSON Web Token (JWT)</div>
-                    <div class="skills__skill">AWS Lambda</div>
-                    <div class="skills__skill">Postman API</div>
-                    <div class="skills__skill">Flutter</div>
-                    <div class="skills__skill">MySql</div>
-                    <div class="skills__skill">MongoDB</div>
-                    <div class="skills__skill">Sqlite</div>
-                    <div class="skills__skill">Html</div>
-                    <div class="skills__skill">Css</div>
-                    <div class="skills__skill">JavaScript</div>
-                    <div class="skills__skill">Flask</div>
-                    <div class="skills__skill">Git</div>
-                    <div class="skills__skill">Github</div>
-                    <div class="skills__skill">Node</div> -->
+                   
                   </div>
                 </div>
               </div>
             </div>
           </section>
 
-          <section id="projects" class="projects ">
+          <!-- <section id="projects" class="projects ">
             <div class="container px-6 py-10 mx-auto">
             <h2 class="heading heading-sec heading-sec__mb-med">
                   <span class="heading-sec__main">explore some  awesome Projects</span>
@@ -544,7 +525,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
                 <div class="grid grid-cols-1 gap-10 mt-8 xl:mt-20 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
                     {% for key,value in projectInfo.items %} 
                 
-                    <!-- <div class="grid grid-cols-1 gap-10 mt-8 xl:mt-20 xl:gap-12 md:grid-cols-2 xl:grid-cols-3"> -->
+                  
                         <div class=" projectsBox p-8 space-y-3 border-2 border-blue-700 dark:border-blue-700 rounded-xl">
                             <span class="inline-block text-blue-500 dark:text-blue-600">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -566,8 +547,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
                             </a>
                         </div>
             
-                     
-                    <!-- </div> -->
+                   
                    
                  {% endfor %} 
                     
@@ -576,7 +556,72 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
                 </div>
                 
             </div>
-        </section>
+        </section> -->
+        <!-- component -->
+
+        <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+<section id="projects" class="projects relative pt-16 bg-blueGray-50">
+  
+  <div class="container px-6 py-10 mx-auto">
+    <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">explore some  awesome Projects</span>
+          
+        </h2>
+        {% for key,value in projectInfo.items %} 
+  <div class=" flex flex-wrap items-center">
+    <div class=" prohv w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
+      <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-500">
+        <img alt="..." src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80" class="w-full align-middle rounded-t-lg">
+        <blockquote class="relative p-8 mb-4">
+         
+          <h4 class="text-xl font-bold text-white">
+            {{value.firstLine}}
+          </h4>
+          <p class="text-md font-light mt-2 text-white">
+            {{value.description}}
+          </p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="w-full md:w-6/12 px-4">
+      <div class="flex flex-wrap">
+        <div class="w-full  px-4">
+          <div class="relative flex flex-col mt-4">
+            <div class="px-4 py-5 flex-auto">
+              <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <h6 class="text-xl mb-1 font-semibold">Tech Stack</h6>
+              <p class="mb-4 text-blueGray-500">
+                {{value.techStack}}
+              </p>
+            </div>
+          </div>
+          <a href="{{value.github}}" target="_blank" >
+          <div class="relative flex flex-col min-w-0">
+            <div class="px-4 py-5 flex-auto">
+              <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <h6 class="text-xl mb-1 font-semibold">Information and Link</h6>
+              <p class="mb-4 text-blueGray-500">
+                {{value.descriptionNew}}
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        
+       
+      </div>
+    </div>
+  </div>
+  {% endfor %} 
+</div>
+
+</section>
         <section id="amazing">
 
           
