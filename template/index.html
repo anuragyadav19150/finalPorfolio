@@ -27,15 +27,7 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <style>
-        nav {
-    
-    border: 1px  rgb(255, 255, 255) solid;
-    
-
-    box-shadow: 
-        /* inset 0px 11px 8px -10px rgb(0, 0, 0), */
-        inset 0px -11px 8px -10px rgb(125, 124, 124);
-}
+       
 
 /*
 0 - 600px:      Phone
@@ -132,7 +124,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
       text-align: center; }
   
   .about {
-      padding-top: 1%;
+      padding-top: 6%;
     background: #fafafa;
   font-size: 1rem; }
     .about__content {
@@ -179,7 +171,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
       .timeline{
        
         width:500px;
-        background-color:#fafafa;
+        background-color:#f9f6f6;
         color:rgb(0, 0, 0);
       
         
@@ -254,37 +246,29 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
     
     background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)), url(../static/images/background_about.svg);
     background-position: center;
-    height: 90vh;
+   
     
     
-    position: relative; }
+    }
     @media only screen and (max-width: 37.5em) {
       .home-hero {
-        height: unset;
-        min-height: unset; } }
+       } }
     .home-hero__socials {
       position: absolute;
-      top: 50%;
-      border: 1.5px solid #eee;
-      border-left: 1.5px solid #eee;
-      transform: translateY(-50%); }
-      @media only screen and (max-width: 56.25em) {
+      
+      border: 1px solid #eee;
+      border-left: 1px solid #eee;
+       }
+      @media only screen and (max-width: 65.25em) {
         .home-hero__socials {
           display: none; } }
-    .home-hero__mouse-scroll-cont {
-      position: absolute;
-      bottom: 3%;
-      left: 50%;
-      transform: translateX(-50%); }
-      @media only screen and (max-width: 37.5em) {
-        .home-hero__mouse-scroll-cont {
-          display: none; } }
+ 
     .home-hero__social {
-      width: 5rem; }
+      width: 4rem; }
     .home-hero__social-icon-link {
       width: 100%;
       display: block;
-      padding: 1.2rem;
+      padding: 1rem;
       border-bottom: 2px solid #eee;
       transition: background .3s; }
       .home-hero__social-icon-link:hover {
@@ -294,19 +278,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
         border-bottom: 0; }
     .home-hero__social-icon {
       width: 100%; }
-    .home-hero__content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 90rem;
-      width: 92%; }
-      @media only screen and (max-width: 37.5em) {
-        .home-hero__content {
-          padding: 19rem 0 13rem 0;
-          margin: auto;
-          position: static;
-          transform: translate(0, 0); } }
+   
     .home-hero__info {
       margin: 3rem auto 0 auto;
       max-width: 80rem; }
@@ -326,15 +298,18 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
       }
   
   	.hvbtn{
-		background:#093eff;
+		background:#ebe7e7f0;
+    border-style: solid;
+    border-color: black;
 	    }
       .hvbtn:hover{
-        background: -webkit-linear-gradient(rgba(192, 2, 255, 0.95), rgb(0, 132, 255));
+        background: -webkit-linear-gradient(rgba(255, 255, 255, 0.95)rgb(229, 240, 250));
             
   
       }
 
       .projects{
+        padding-top: 5%;
         background: linear-gradient(to right,rgba(245, 245, 245, 0.904),rgb(245, 245, 245)), url(../static/images/background_info.svg);
         background-size: cover;
         background-position: center;
@@ -343,6 +318,11 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
     .projectsBox:hover{
       transform: scale(1.1);
       background: linear-gradient(to right,rgba(245, 245, 245, 0.904),rgb(164, 200, 238)), url(../static/images/background_info.svg);
+    }
+
+    .amaze:hover{
+      transform: scale(1.1);
+      /* background: linear-gradient(to right,rgba(245, 245, 245, 0.904),rgb(164, 200, 238)), url(../static/images/background_info.svg); */
     }
     
     .maintext_projects{
@@ -365,15 +345,19 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
         font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
           monospace;
       }
+
+      .footers{
+        background-color: #ebeaeae3;
+      }
       
     </style>
    
     <title>Anurag Yadav</title>
   </head>
   <body>
-    <header class='headernav '>
+    <header class='sticky top-0 z-30 w-full  bg-white  shadow-xl headernav '>
 		
-        <nav class="  dark:bg-white-800">
+        <nav class=" navs  dark:bg-white-800">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                 <a href="#" class="flex items-center">
                     <img src="../static/images/logo.png" class="ml-0 mr-3 h-20  w-20 " alt="Anurag Yadav" >
@@ -401,6 +385,9 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
                         <li>
                             <a href="#amazing" class="block py-2 text-xl pr-4 pl-3 text-black rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-black hover:text-blue-600" aria-current="page">Amazing</a>
                         </li>
+                        <li>
+                          <a href="../static/Anurag.pdf" download class="block py-2 text-xl pr-4 pl-3 text-black rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-black hover:text-blue-600" aria-current="page">Resume</a>
+                      </li>
                         
                     </ul>
                 </div>
@@ -409,14 +396,42 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
     </header>
 
     <section id="home" class=" home-hero bg-cover bg-center pt-52">
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/anurag-yadav-0900a819b/" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+            <img src="../static/images/linkedin.svg" alt="Anurag Linkedin Profile" class="home-hero__social-icon"/>
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://twitter.com/anurag_grimmJow" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+            <img src="../static/images/twitter.svg" alt="Anurag Twitter Profile" class="home-hero__social-icon">
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/anuragyadav19150" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+            <img src="../static/images/github.svg" alt="Anurag Github Profile" class="home-hero__social-icon">
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://codeforces.com/profile/1929Hrs07" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none" rel="noreferrer" target="_blank">
+            <img src="../static/images/codeforces.svg" alt="Anurag codeforces" class="home-hero__social-icon">
+          </a>
+        </div>
         
+
+        <div class="home-hero__social">
+          <a href="https://leetcode.com/anuragy3840/" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+            <img src="../static/images/leetcode.svg" alt="Anurag leetcode" class="home-hero__social-icon">
+          </a>
+        </div>
+      </div>
         <div class=" px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
            
             <h1 class="maintext mb-4 text-4xl font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl ">{{firstLine}}</h1>
             <p class="mb-8 text-lg font-normal text-gray-500 font-bold lg:text-xl sm:px-16 xl:px-48 dark:text-black-400">{{description}}</p>
             <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                 
-                <a href="#projects" class="hvbtn inline-flex justify-center items-center py-3 px-3 text-base font-medium text-center text-black-500 rounded-lg border border-black-500 hover:bg-gray-100 focus:ring-4 focus:ring-black-500 dark:text-black dark:border-black-700  dark:hover:text-black dark:focus:ring-black-800 hover:scale-150">
+                <a href="#projects" class="hvbtn inline-flex justify-center items-center py-6 px-6 text-base font-medium text-center text-black-500 rounded-lg border border-black-500   dark:text-black border-black-700  dark:hover:text-black dark:focus:ring-black-800 hover:scale-150">
                     Projects
                     <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                
@@ -425,36 +440,9 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
             <h1>.</h1>
            
         </div>
+       
     </section>
-    <div class="home-hero__socials">
-            <div class="home-hero__social">
-              <a href="https://www.linkedin.com/in/anurag-yadav-0900a819b/" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
-                <img src="../static/images/linkedin.svg" alt="Anurag Linkedin Profile" class="home-hero__social-icon"/>
-              </a>
-            </div>
-            <div class="home-hero__social">
-              <a href="https://twitter.com/anurag_grimmJow" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
-                <img src="../static/images/twitter.svg" alt="Anurag Twitter Profile" class="home-hero__social-icon">
-              </a>
-            </div>
-            <div class="home-hero__social">
-              <a href="https://github.com/anuragyadav19150" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
-                <img src="../static/images/github.svg" alt="Anurag Github Profile" class="home-hero__social-icon">
-              </a>
-            </div>
-            <div class="home-hero__social">
-              <a href="https://codeforces.com/profile/1929Hrs07" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none" rel="noreferrer" target="_blank">
-                <img src="../static/images/codeforces.svg" alt="Anurag Youtube Channel" class="home-hero__social-icon">
-              </a>
-            </div>
-            
-    
-            <div class="home-hero__social">
-              <a href="https://leetcode.com/anuragy3840/" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
-                <img src="../static/images/leetcode.svg" alt="Anurag DEV.to Blog Profile" class="home-hero__social-icon">
-              </a>
-            </div>
-          </div>
+   
 
 
           <section id="about" class="about sec-pad">
@@ -570,7 +558,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
                                 {{value.description}}
                             </p>
             
-                            <a href="{{value.github}}" class="inline-flex p-2 text-blue-500 capitalize transition-colors duration-300 transform bg-blue-100 rounded-full rtl:-scale-x-100 dark:bg-blue-500 dark:text-white hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                            <a href="{{value.github}}" target="_blank" class="inline-flex p-2 text-blue-500 capitalize transition-colors duration-300 transform bg-blue-100 rounded-full rtl:-scale-x-100 dark:bg-blue-500 dark:text-white hover:underline hover:text-black-600 dark:hover:text-black-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
@@ -588,8 +576,50 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
                 
             </div>
         </section>
+        <section id="amazing">
+
+          
+<div class="w-full p-12 bg-white">
+  <div class="container px-6 py-10 mx-auto">
+    <h2 class="heading heading-sec heading-sec__mb-med">
+      <span class="heading-sec__main">Some Amazing Stuff</span>
+      
+    </h2>
+      <div class="text-end">
+          
+          </div>
+      </div>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3 ">
+        {% for key,value in amazing.items %} 
+          <div class="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80 amaze">
+              <a href={{value.link}} target="_blank" class="block w-full h-full">
+                 
+                  <div class="w-full p-4 bg-white dark:bg-gray-800">
+                      <p class="font-medium text-indigo-500 text-md">
+                          {{value.type}}
+                      </p>
+                      <p class="mb-2 text-xl font-medium text-gray-800 dark:text-white">
+                         {{value.title}}
+                      </p>
+                      <p class="font-light text-gray-400 dark:text-gray-300 text-md">
+                          {{value.description}}
+                      </p>
+                      <div class="flex items-center mt-4">
+                         
+                      </div>
+                  </div>
+              </a>
+          </div>
+          
+          {% endfor %} 
+          
+      </div>
+  </div>
+
+
+        </section>
        
-        <footer class="bg-white dark:bg-white-300">
+        <footer class="footers ">
             <div class="container p-6 mx-auto">
                
                     
