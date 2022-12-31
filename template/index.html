@@ -273,9 +273,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
     
     
     }
-    @media only screen and (max-width: 37.5em) {
-      .home-hero {
-       } }
+  
     .home-hero__socials {
       position: absolute;
       
@@ -338,10 +336,10 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
         background-position: center;
         position: relative;
     }
-    .prohv:hover{
+    /* .prohv:hover{
       transform: scale(1.05);
      
-    }
+    } */
 
     .amaze:hover{
       transform: scale(1.1);
@@ -372,7 +370,56 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
       .footers{
         background-color: #ebeaeae3;
       }
-      
+      .card {
+  width: 350px;
+  height: 530px;
+  padding: 0;
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card * {
+  transition: 0.3s ease all;
+}
+
+.card img {
+  margin: 0;
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.card h3 {
+  margin: 0;
+  padding: 12px 12px 48px;
+  line-height: 32px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.card .focus-content {
+  display: block;
+  padding: 8px 12px;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.card:hover img, .card:focus-within img {
+  margin-top: -100px;
+}
+
+.card:hover h3, .card:focus-within h3 {
+  padding: 8px 12px 0;
+}
+
+@media only screen and (max-width: 55.25em) {
+        .card .hide {
+          display: none; } }
     </style>
    
     <title>Anurag Yadav</title>
@@ -594,7 +641,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
         {% for key,value in projectInfo.items %} 
         <a href="{{value.github}}" target="_blank">
   <div class=" flex flex-wrap items-center">
-    <div class=" prohv px-12 md:px-4 mr-auto ml-auto -mt-78">
+    <div class=" card px-12 md:px-4 mr-auto ml-auto -mt-78">
       <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-500">
         <img alt="..." src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80" class="w-full align-middle rounded-t-lg">
         <blockquote class="relative p-8 mb-4">
@@ -606,16 +653,16 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
             {{value.description}}
           </p>
           
-          <div class="w-full  ">
+          <div class="w-full focus-content ">
             <div class="flex flex-wrap">
               <div class="w-full  ">
                 <div class="relative flex flex-col mt-4">
                   <div class="py-5 flex-auto">
-                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                    <div class="hide text-white-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
                       <i class="fas fa-sitemap"></i>
                     </div>
                     <h6 class="text-xl mb-1 font-semibold">Tech Stack</h6>
-                    <p class="mb-4 text-blueGray-500">
+                    <p class="mb-4 text-white-500">
                       {{value.techStack}}
                     </p>
                   </div>

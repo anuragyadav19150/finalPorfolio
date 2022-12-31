@@ -65,7 +65,7 @@ def index(request):
             },
             "4": {
                 "firstLine": "Color Switch",
-                "description": "Made a clone of the famous game Color Switch with JavaFX in JAVA.Used many oop's features ",
+                "description": "Made a clone of the famous game Color Switch with JavaFX in JAVA.Used many OOPs features like inheritance",
                 "github": "https://github.com/anuragyadav19150/apFinal",
                 "image": "../static/projects/ms.png",
                 "techStack":"Java , Java FX",
