@@ -138,7 +138,7 @@ def index(request):
             "4": { 
                 "type": "Time Pass",
                 "title": "Design resource",
-                "description": " Top 10 Resources for Design , absolutely FREE for use checkout quick 🚀",
+                "description": " Top 10 Resources for Design , absolutely FREE for use , checkout and implement🚀",
                 "link":"https://twitter.com/_vargaalex/status/1607018293805699072"
             },
             "5": { 
@@ -150,7 +150,7 @@ def index(request):
             "6": { 
                 "type": "Time Pass",
                 "title": "CSS generators",
-                "description": "9 CSS generators that can save you from writing CSS code 🧵:",
+                "description": "some of best CSS generators that can save you from writing CSS code 🧵:",
                 "link":"https://twitter.com/Prathkum/status/1605913312591548416"
             }
         }
