@@ -132,13 +132,13 @@ def index(request):
             "3": {
                 "type": "Time Pass",
                 "title": "Practice Web Dev",
-                "description": "13 Apps to build to practice your HTML, CSS, and Javascript",
+                "description": "13 Apps to build to practice your HTML, CSS, and Javascript checkout",
                 "link":"https://twitter.com/csaba_kissi/status/1599330144820383744"
             },
             "4": { 
                 "type": "Time Pass",
                 "title": "Design resource",
-                "description": "My Top 10 FREE Resources for Design 🚀",
+                "description": " Top 10 Resources for Design , absolutely FREE for use checkout quick 🚀",
                 "link":"https://twitter.com/_vargaalex/status/1607018293805699072"
             },
             "5": { 
