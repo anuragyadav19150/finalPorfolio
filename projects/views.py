@@ -36,61 +36,53 @@ def index(request):
         "projectInfo": {
             "1": {
                 "firstLine": "Microsoft Teams Engage",
-                "description": "I made this Microsoft Teams Clone App in Microsoft Engage 2021.You can download and run this app.",
+                "description": "Developed a Microsoft Teams Clone App as part of Microsoft Engage 2021. The app is available for download and use.",
                 "github": "https://github.com/anuragyadav19150/ms_engage_2021",
                 "image": "../static/projects/ms.jpg",
-                "techStack":"Futter , Dart , Android Studio , Agora video service",
-                "descriptionNew": "I made this Microsoft Teams Clone App in Microsoft Engage 2021.You can download and run this app. Create an Account and Obtain an App ID To build and run the sample application, first obtain an app ID: Create a developer account at agora.io. Once you finish the sign-up process, you are redirected to the dashboard. Navigate in the dashboard tree on the left to Projects > Project List. Copy the app ID that you obtain from the dashboard into a text file. You will use this when you launch the app.",
- 
+                "techStack": "Flutter, Dart, Android Studio, Agora Video Service",
+                "descriptionNew": "Built a Microsoft Teams Clone App during Microsoft Engage 2021. Users can download, install, and run this application. To get started, create an account and obtain an App ID from Agora. Sign up on agora.io, navigate to Projects > Project List in the dashboard, and copy your App ID. This ID is required to launch the app."
             },
             "2": {
-                "firstLine": "Shopify - Full stack",
-                "description": "Designed a system that maintains the database of a Shopping website along with its\r\nFully Functional website.",
+                "firstLine": "Shopify - Full Stack",
+                "description": "Designed and developed a fully functional shopping website with a database management system.",
                 "github": "https://github.com/anuragyadav19150/Shopify_DBMS",
                 "image": "../static/projects/shop.png",
-                "techStack":"React , Node , MySql ",
-                "descriptionNew": "Designed a system that maintains the database of a Shopping website along with its\r\nFully Functional website. We ahave added many features like Login , signup and admin control where admin can control every thing fromuser info to product infomation.",
-                
-
+                "techStack": "React, Node.js, MySQL",
+                "descriptionNew": "Built a shopping website with full-stack development, integrating a database system for user and product management. Features include login, signup, and an admin panel for managing users and product information."
             },
             "3": {
-                "firstLine": "Traffic Rule Violation ",
-                "description": "We detect traffic violations like over-speeding and crossing the Red light Signal using\r\ncomputer vision .",
+                "firstLine": "Traffic Rule Violation Detection",
+                "description": "Developed a computer vision model to detect traffic violations like overspeeding and red light crossing.",
                 "github": "https://github.com/anuragyadav19150/Traffic-Rule-Violation-detection",
-               "image": "../static/projects/ms.png",
-                "techStack":"Python , computer vision",
-                "descriptionNew": "a traffic violation system using Computer vision is highly needed as these systems can act as an efficient tool to reduce traffic violations and penalise violators. So in this project, we are trying to develop a computer vision model that can detect violations of basic traffic rules like not wearing a helmet, overspeeding, and jumping red lights",
-                
-
+                "image": "../static/projects/ms.png",
+                "techStack": "Python, Computer Vision",
+                "descriptionNew": "Designed a computer vision-based system to automatically detect traffic violations such as not wearing helmets, overspeeding, and jumping red lights. This project aims to improve road safety and ensure efficient enforcement of traffic rules."
             },
             "4": {
                 "firstLine": "Color Switch",
-                "description": "Made a clone of the famous game Color Switch with JavaFX in JAVA.Used many OOPs features like inheritance",
+                "description": "Developed a clone of the popular game Color Switch using JavaFX with object-oriented programming principles.",
                 "github": "https://github.com/anuragyadav19150/apFinal",
                 "image": "../static/projects/ms.png",
-                "techStack":"Java , Java FX",
-                "descriptionNew": "Made a clone of the famous game Color Switch with JavaFX in JAVA. We have used many oop's features to make this project, We also have made the uml diagram so that we can plan how we are going to do this project and also a use case diagram so that we have a clear picture of the final product in our mind hope you like it!",
-                
-
+                "techStack": "Java, JavaFX",
+                "descriptionNew": "Recreated the famous Color Switch game using JavaFX. This project heavily utilizes OOP principles like inheritance and encapsulation. We also designed UML and use case diagrams to plan and visualize the final product effectively."
             },
             "5": {
                 "firstLine": "Dream Team Creator",
-                "description": "We made a model that will make a team which will win the tournament by using the\r\ndata present online",
+                "description": "Developed a machine learning model that predicts a winning fantasy team using online data.",
                 "github": "https://github.com/anuragyadav19150/Machine_Learning_Final_Project",
                 "image": "../static/projects/ms.png",
-                "techStack":"Pyhton , Machine Learning ",
-                "descriptionNew": "The main focus of this project is to create a winning fantasy team by looking at the huge amount of data present online and predicting which team will win by analyzing player’s performance history, statistics against the opponent team, home ground status, weather impact, and many other factors and attempt to predict the outcome",
-                
+                "techStack": "Python, Machine Learning",
+                "descriptionNew": "Created a predictive model to generate the best fantasy team by analyzing online data. The model considers player performance history, opponent statistics, home ground advantage, weather conditions, and other factors to optimize team selection."
             },
             "6": {
-                "firstLine": "GRAM VISION",
-                "description": "Developing a user-friendly, Easy to use Mobile App, using Flutter, Dart, and\r\nGoogle Firebase(for backend).",
+                "firstLine": "Gram Vision",
+                "description": "Developed a mobile app for village communities using Flutter and Google Firebase.",
                 "github": "https://github.com/anuragyadav19150/GramVision",
                 "image": "../static/projects/ms.png",
-                "techStack":"Futter , Dart , Android Studio , Google fire base",
-                "descriptionNew": "Developing a user-friendly, Easy to use Mobile App, using Flutter, Dart, and\r\nGoogle Firebase(for backend), for the people of a village. Made an app Panchayat using Flutter, Dart and Google Firebase. It is centered around people of villages where they can get info about latest announcements & policies, file personal and general complaints, sell/buy products and contact buyer/seller using the inbuilt messaging app and many other features.",
- 
+                "techStack": "Flutter, Dart, Android Studio, Google Firebase",
+                "descriptionNew": "Built a community-based mobile app to help villagers access announcements, policies, file complaints, and trade products. The app features a built-in messaging system, allowing buyers and sellers to communicate seamlessly."
             }
+        }
         },
         "skills": {
             "1": "Python",
@@ -114,8 +106,8 @@ def index(request):
             "19": "SQLite",
             "20": "Flask"
         },
-        "firstLine": "HEY, I'M ANURAG YADAV",
-        "description": "Expert at Codeforces | Ex-SDE Intern'22 @Expedia Group | Software Developer @ Cloud Labs | ECE @ IIIT Delhi.",
+        "firstLine": "Hey, I'm Anurag Yadav",
+        "description": "SDE 1 at Expedia Group | Former Software Developer at Cloud Labs | ECE Graduate from IIIT Delhi."
         "amazing": {
             "1": {
                 "type": "Blog",
