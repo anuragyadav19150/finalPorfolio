@@ -55,7 +55,7 @@ def index(request):
             "7": {
                 "firstLine": "RISC-V Assembler & Simulator",
                 "description": "Built a C++ program to simulate a subset of the RISC-V instruction set architecture (RV32).",
-                "github": "https://github.com/anuragyadav19150/RISC-V-Assembler-Simulator",
+                "github": "https://github.com/yash19219/Risc-V-Simulator#%23risc-v-simulator",
                 "image": "../static/projects/ms.png",
                 "techStack": "C++, RISC-V",
                 "descriptionNew": "Developed a tool in C++ that converts RISC-V assembly code into 32-bit binary instructions. Also created a 5-stage simulator (IF, ID, EX, MEM, WB) for RV32 ISA that executes and debugs these instructions."
@@ -88,7 +88,7 @@ def index(request):
             "24": "Computer Vision"
         },
         "firstLine": "Hey, I'm Anurag Yadav",
-        "description": "Software Development Engineer - II at Expedia Group | Ex-Cloud Labs, Iuraverse | IIIT Delhi (ECE) | Python | C++ | AWS | React | Django | Ansible | Datadog",
+        "description": "Software Development Engineer - II at Expedia Group | IIIT Delhi (ECE) | Python | C++ | AWS | React | Django | Ansible | Datadog",
         "amazing": {
             "1": {
                 "type": "Blog",
