@@ -257,6 +257,66 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
       
       }
 
+.timeline {
+  list-style: none;
+  padding-left: 0;
+  border-left: 3px solid #ddd;
+  margin-left: 1rem;
+}
+
+.timeline li {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 0.3rem;
+  width: 12px;
+  height: 12px;
+  background-color: #3498db;
+  border-radius: 50%;
+}
+
+.timeline .date {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.timeline h4 {
+  margin: 0.2rem 0;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.timeline p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.skills-section {
+  margin-top: 2rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-badge {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1.2rem;
+  font-size: 0.9rem;
+  color: #333;
+}
 
       
 
@@ -483,103 +543,84 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
    
 
 
-          <section id="about" class="about sec-pad">
-            <div class="main-container">
-              <h2 class="heading heading-sec heading-sec__mb-med">
-                <span class="heading-sec__main">Skills And Experience</span>
-                
-              </h2>
-              <div class="about__content">
-                <div class="about__content-main">
-                  <h3 class="about__content-title">Experience!</h3>
-                  
-          <div class="timeline">
-              <ul>
-                  <li>
-                      <span>Jun 2021 - Jul 2021</span>
-                      <div class="content">
-                          <h3>Microsoft Engage'21 Mentee</h3>
-                          <p>
-                          • Mentoring by Microsoft Employees through webinars , AMA sessions.
-      • Developed a Fully Functional Prototype App of Microsoft Teams.
-      • Applied Agile Scrum Methodology , Flutter , Dart , Agora SDK API
-                          </p>
-                      </div>
-                  </li>
-                  <li>
-                      <span>May 2022 - Jul 2022</span>
-                      <div class="content">
-                          <h3>Expedia Group SDE backend Intern</h3>
-                          <p>
-                          • Working on Developing Internal Software for Expedia Group which
-      help people to create network request more easily and efficiently.
-      • Technologies like FLask , JAVASCRIPT , PYTHON ,AWS are used.
-                          </p>
-                      </div>
-                  </li>
-                  <li>
-                      <span>Aug 2022 - June 2023</span>
-                      <div class="content">
-                          <h3>Software Developer @ Cloud Labs</h3>
-                          <p>
-                          
-                          • Developing website for students to enhance their Lab experience.
-      • Working on frontend , backend and database.
-      • Served over 22,000+ bookings and 100s of active users
-      • Tech Stack Django , Javascript , Python
-      
-                          </p>
-                      </div>
-                  </li>
-		      <li>
-                      <span>Aug 2023 - Mar 2024</span>
-                      <div class="content">
-                          <h3>Software Development Engineer - I</h3>
-                          <p>
-                          
-                          • My work is focused on network infrastructure automation, which makes multiple processes efficient, cost-effective
-easier to manage.
-      • Working on frontend , backend and database.
-      • Major Tech Stack: Python, AWS, Javascript
-      
-                          </p>
-                      </div>
-                  </li>
+         <section id="about" class="about sec-pad">
+  <div class="main-container">
+    <h2 class="heading heading-sec heading-sec__mb-med">
+      <span class="heading-sec__main">Skills and Experience</span>
+    </h2>
 
-		      <li>
-                      <span>Apr 2024 - Current</span>
-                      <div class="content">
-                          <h3>Software Development Engineer - II</h3>
-                          <p>
-                          
-                          • My work is focused on network infrastructure automation, which makes multiple processes efficient, cost-effective
-easier to manage.
-				  • Handling Monitoring of Network Resouring using Datadog Automation.
-      • Working on frontend , backend and database.
-      • Major Tech Stack: Python, AWS, Javascript, Ansible, Datadog
-      
-                          </p>
-                      </div>
-                  </li>
-                  
-              </ul>
-          </div>
-      
-                  
-                </div>
-                <div class="about__content-skills">
-                  <h3 class="about__content-title">My Skills</h3>
-                  <div class="skills">
-                    {% for priority,skill in skills.items %} 
-                    
-                    <div class="skills__skill">{{skill}}</div>
-                   {% endfor %} 
-                   
-                  </div>
-                </div>
-              </div>
+    <div class="about__content">
+      <div class="experience">
+        <h3 class="about__content-title">Experience</h3>
+        <ul class="timeline">
+          <li>
+            <span class="date">Jun 2021 - Jul 2021</span>
+            <div class="content">
+              <h4>Microsoft Engage'21 Mentee</h4>
+              <p>
+                • Mentored by Microsoft engineers via webinars & AMAs.<br>
+                • Built a fully functional Microsoft Teams clone using Flutter, Dart, Agora SDK.<br>
+                • Followed Agile Scrum Methodology.
+              </p>
             </div>
-          </section>
+          </li>
+          <li>
+            <span class="date">May 2022 - Jul 2022</span>
+            <div class="content">
+              <h4>Expedia Group - SDE Backend Intern</h4>
+              <p>
+                • Developed internal tooling to simplify network request creation.<br>
+                • Stack: Flask, JavaScript, Python, AWS.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="date">Aug 2022 - Jun 2023</span>
+            <div class="content">
+              <h4>Software Developer @ Cloud Labs</h4>
+              <p>
+                • Built full-stack web apps to enhance student lab experiences.<br>
+                • 22,000+ bookings served.<br>
+                • Stack: Django, JavaScript, Python.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="date">Aug 2023 - Mar 2024</span>
+            <div class="content">
+              <h4>Software Development Engineer - I</h4>
+              <p>
+                • Automated network infrastructure to improve efficiency and reduce cost.<br>
+                • Stack: Python, AWS, JavaScript.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="date">Apr 2024 - Current</span>
+            <div class="content">
+              <h4>Software Development Engineer - II</h4>
+              <p>
+                • Continued network automation with focus on scalability.<br>
+                • Monitoring via Datadog automation.<br>
+                • Stack: Python, AWS, JavaScript, Ansible, Datadog.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skills-section">
+        <h3 class="about__content-title">My Skills</h3>
+        <div class="skills">
+          {% for priority, skill in skills.items %}
+          <span class="skill-badge">{{ skill }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
           <!-- <section id="projects" class="projects ">
             <div class="container px-6 py-10 mx-auto">
