@@ -537,7 +537,111 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
       .footers{
         background-color: #ebeaeae3;
       }
-      
+      .experience {
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222; /* keep your default color */
+  }
+
+  .about__content-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #111; /* dark but consistent */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+
+  .timeline-container {
+    position: relative;
+    padding-left: 40px;
+    border-left: 3px solid #ccc;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateX(30px);
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+  }
+
+  .timeline-item.left {
+    animation-name: slideInLeft;
+  }
+  .timeline-item.right {
+    animation-name: slideInRight;
+  }
+
+  @keyframes slideInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: -12px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    background-color: #3498db; /* subtle blue */
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+
+  .timeline-dot:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 12px rgba(52, 152, 219, 0.8);
+  }
+
+  .timeline-content {
+    padding-left: 20px;
+  }
+
+  .timeline-date {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 0.2rem;
+    display: block;
+  }
+
+  .timeline-content h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0.1rem 0 0.5rem 0;
+  }
+
+  .timeline-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  /* Alternate left/right alignment for content */
+  .timeline-item.left .timeline-content {
+    text-align: left;
+  }
+
+  .timeline-item.right .timeline-content {
+    text-align: left;
+  }
     </style>
   
    
@@ -644,7 +748,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
       <div class="experience">
   <h3 class="about__content-title">Experience</h3>
   <div class="timeline-container">
-    <div class="timeline-item left">
+    <div class="timeline-item left" style="animation-delay: 0.1s;">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <span class="timeline-date">Jun 2021 - Jul 2021</span>
@@ -657,7 +761,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
       </div>
     </div>
 
-    <div class="timeline-item right">
+    <div class="timeline-item right" style="animation-delay: 0.3s;">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <span class="timeline-date">May 2022 - Jul 2022</span>
@@ -669,7 +773,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
       </div>
     </div>
 
-    <div class="timeline-item left">
+    <div class="timeline-item left" style="animation-delay: 0.5s;">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <span class="timeline-date">Aug 2022 - Jun 2023</span>
@@ -682,7 +786,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
       </div>
     </div>
 
-    <div class="timeline-item right">
+    <div class="timeline-item right" style="animation-delay: 0.7s;">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <span class="timeline-date">Aug 2023 - Mar 2024</span>
@@ -694,7 +798,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
       </div>
     </div>
 
-    <div class="timeline-item left">
+    <div class="timeline-item left" style="animation-delay: 0.9s;">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <span class="timeline-date">Apr 2024 - Current</span>
