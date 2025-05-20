@@ -189,7 +189,98 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
        
       }
   
-  
+  .timeline-container {
+  position: relative;
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #dce3ea;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  padding: 1rem 2rem;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item .timeline-content {
+  background: #f9fbff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #3498db;
+}
+
+.timeline-date {
+  color: #777;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-item.right .timeline-content {
+  margin-left: 1rem;
+  border-left: none;
+  border-right: 4px solid #3498db;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #3498db;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 8px);
+  z-index: 1;
+  box-shadow: 0 0 0 3px #dce3ea;
+}
+
+/* Responsive Handling */
+@media screen and (max-width: 768px) {
+  .timeline-container::after {
+    left: 8px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 0;
+  }
+
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item.right .timeline-content {
+    margin-left: 0;
+    border-left: 4px solid #3498db;
+    border-right: none;
+  }
+
+  .timeline-dot {
+    left: 0;
+  }
+}
+
       .timeline{
        
         width:500px;
@@ -551,63 +642,73 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 
     <div class="about__content">
       <div class="experience">
-        <h3 class="about__content-title">Experience</h3>
-        <ul class="timeline">
-          <li>
-            <span class="date">Jun 2021 - Jul 2021</span>
-            <div class="content">
-              <h4>Microsoft Engage'21 Mentee</h4>
-              <p>
-                • Mentored by Microsoft engineers via webinars & AMAs.<br>
-                • Built a fully functional Microsoft Teams clone using Flutter, Dart, Agora SDK.<br>
-                • Followed Agile Scrum Methodology.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span class="date">May 2022 - Jul 2022</span>
-            <div class="content">
-              <h4>Expedia Group - SDE Backend Intern</h4>
-              <p>
-                • Developed internal tooling to simplify network request creation.<br>
-                • Stack: Flask, JavaScript, Python, AWS.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span class="date">Aug 2022 - Jun 2023</span>
-            <div class="content">
-              <h4>Software Developer @ Cloud Labs</h4>
-              <p>
-                • Built full-stack web apps to enhance student lab experiences.<br>
-                • 22,000+ bookings served.<br>
-                • Stack: Django, JavaScript, Python.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span class="date">Aug 2023 - Mar 2024</span>
-            <div class="content">
-              <h4>Software Development Engineer - I</h4>
-              <p>
-                • Automated network infrastructure to improve efficiency and reduce cost.<br>
-                • Stack: Python, AWS, JavaScript.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span class="date">Apr 2024 - Current</span>
-            <div class="content">
-              <h4>Software Development Engineer - II</h4>
-              <p>
-                • Continued network automation with focus on scalability.<br>
-                • Monitoring via Datadog automation.<br>
-                • Stack: Python, AWS, JavaScript, Ansible, Datadog.
-              </p>
-            </div>
-          </li>
-        </ul>
+  <h3 class="about__content-title">Experience</h3>
+  <div class="timeline-container">
+    <div class="timeline-item left">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Jun 2021 - Jul 2021</span>
+        <h4>Microsoft Engage'21 Mentee</h4>
+        <p>
+          • Mentored by Microsoft engineers via webinars & AMAs.<br>
+          • Built a Microsoft Teams prototype using Flutter, Dart, Agora SDK.<br>
+          • Applied Agile Scrum Methodology.
+        </p>
       </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">May 2022 - Jul 2022</span>
+        <h4>Expedia Group - SDE Backend Intern</h4>
+        <p>
+          • Built internal tools to simplify network requests.<br>
+          • Tech Stack: Flask, JavaScript, Python, AWS.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Aug 2022 - Jun 2023</span>
+        <h4>Software Developer @ Cloud Labs</h4>
+        <p>
+          • Built websites enhancing lab experiences for students.<br>
+          • Served 22,000+ bookings.<br>
+          • Stack: Django, JavaScript, Python.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Aug 2023 - Mar 2024</span>
+        <h4>Software Development Engineer - I</h4>
+        <p>
+          • Automated network infrastructure for efficiency & cost saving.<br>
+          • Stack: Python, AWS, JavaScript.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Apr 2024 - Current</span>
+        <h4>Software Development Engineer - II</h4>
+        <p>
+          • Network infrastructure automation at scale.<br>
+          • Datadog-based monitoring automation.<br>
+          • Stack: Python, AWS, JavaScript, Ansible, Datadog.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <div class="skills-section">
         <h3 class="about__content-title">My Skills</h3>
