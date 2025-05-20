@@ -2,36 +2,6 @@ from django.shortcuts import render
 
 
 def index(request):
-    # print("check 1")
-
-    # projectss=Projects.objects.all()
-    # projectInfo={}
-
-    # for x in projectss:
-    #     projectInfo[x.priority]={"firstLine":x.firstLine,"description":x.description,"github":x.github,"image":x.images}
-
-    # print(projectInfo)
-    # projectInfo = OrderedDict(sorted(projectInfo.items()))
-
-    # infos=Info.objects.all()
-    # skills={}
-
-    # for x in infos:
-    #     skills[x.priority]=x.skill
-
-    # print(skills)
-    # skills = OrderedDict(sorted(skills.items()))
-
-    # abouts=About.objects.all()
-    # firstLine=""
-    # description=""
-
-    # for x in abouts:
-    #     if x.priority==1:
-    #         firstLine=x.firstLine
-    #         description=x.description
-    #         break
-    # print("sending")
     data = {
         "projectInfo": {
             "1": {
@@ -81,69 +51,80 @@ def index(request):
                 "image": "../static/projects/ms.png",
                 "techStack": "Flutter, Dart, Android Studio, Google Firebase",
                 "descriptionNew": "Built a community-based mobile app to help villagers access announcements, policies, file complaints, and trade products. The app features a built-in messaging system, allowing buyers and sellers to communicate seamlessly."
+            },
+            "7": {
+                "firstLine": "RISC-V Assembler & Simulator",
+                "description": "Built a C++ program to simulate a subset of the RISC-V instruction set architecture (RV32).",
+                "github": "https://github.com/anuragyadav19150/RISC-V-Assembler-Simulator",
+                "image": "../static/projects/ms.png",
+                "techStack": "C++, RISC-V",
+                "descriptionNew": "Developed a tool in C++ that converts RISC-V assembly code into 32-bit binary instructions. Also created a 5-stage simulator (IF, ID, EX, MEM, WB) for RV32 ISA that executes and debugs these instructions."
             }
-        }
         },
         "skills": {
-            "1": "Python",
-            "2": "JavaScript",
-            "3": "AWS",
-            "4": "GitHub Actions",
-            "5": "C++",
-            "6": "Java",
-            "7": "Django",
-            "8": "Django REST Framework",
-            "9": "React",
-            "10": "Node.js",
-            "11": "Flutter",
-            "12": "AWS Lambda",
-            "13": "Ansible",
-            "14": "Datadog",
-            "15": "Postman API",
-            "16": "JSON Web Token (JWT)",
-            "17": "MongoDB",
-            "18": "MySQL",
-            "19": "SQLite",
-            "20": "Flask"
+            "1": "C++",
+            "2": "Python",
+            "3": "Java",
+            "4": "JavaScript",
+            "5": "AWS",
+            "6": "React",
+            "7": "Node.js",
+            "8": "Django",
+            "9": "Django REST Framework",
+            "10": "Flask",
+            "11": "MongoDB",
+            "12": "MySQL",
+            "13": "SQLite",
+            "14": "AWS Lambda",
+            "15": "Git / GitHub",
+            "16": "GitHub Actions",
+            "17": "Postman API",
+            "18": "JWT (JSON Web Tokens)",
+            "19": "Ansible",
+            "20": "Datadog",
+            "21": "HTML/CSS",
+            "22": "Bootstrap",
+            "23": "Redux",
+            "24": "Computer Vision"
         },
         "firstLine": "Hey, I'm Anurag Yadav",
-        "description": "SDE 1 at Expedia Group | Former Software Developer at Cloud Labs | ECE Graduate from IIIT Delhi."
+        "description": "Software Development Engineer - II at Expedia Group | Ex-Cloud Labs, Iuraverse | IIIT Delhi (ECE) | Python | C++ | AWS | React | Django | Ansible | Datadog",
         "amazing": {
             "1": {
                 "type": "Blog",
                 "title": "Django Vercel Deployment",
                 "description": "To deploy your Django Frontend on Free platform Vercel you can follow this.",
-                "link":"https://docs.google.com/document/d/10T-cco1ve1iCJA-WsEt_q_de7PvIGd8ovv8Pkj-q3vw/edit?usp=sharing"
+                "link": "https://docs.google.com/document/d/10T-cco1ve1iCJA-WsEt_q_de7PvIGd8ovv8Pkj-q3vw/edit?usp=sharing"
             },
             "2": {
                 "type": "Time Pass",
                 "title": "relieve stress",
                 "description": "Here are 9 websites to help you relieve stress and avoid boredom at work:",
-                "link":"https://twitter.com/MakadiaHarsh/status/1599753120133058562"
+                "link": "https://twitter.com/MakadiaHarsh/status/1599753120133058562"
             },
             "3": {
                 "type": "Time Pass",
                 "title": "Practice Web Dev",
                 "description": "13 Apps to build to practice your HTML, CSS, and Javascript checkout",
-                "link":"https://twitter.com/csaba_kissi/status/1599330144820383744"
+                "link": "https://twitter.com/csaba_kissi/status/1599330144820383744"
             },
-            "4": { 
+            "4": {
                 "type": "Time Pass",
                 "title": "Design resource",
                 "description": " Top 10 Resources for Design , absolutely FREE for use , checkout and implement🚀",
-                "link":"https://twitter.com/_vargaalex/status/1607018293805699072"
+                "link": "https://twitter.com/_vargaalex/status/1607018293805699072"
             },
-            "5": { 
+            "5": {
                 "type": "Time Pass",
                 "title": "Google Chrome extensions",
                 "description": "10 Google Chrome extensions that'll make you a super productive developer.",
-                "link":"https://twitter.com/csaba_kissi/status/1604840475512524803"
+                "link": "https://twitter.com/csaba_kissi/status/1604840475512524803"
             },
-            "6": { 
+            "6": {
                 "type": "Time Pass",
                 "title": "CSS generators",
                 "description": "some of best CSS generators that can save you from writing CSS code 🧵:",
-                "link":"https://twitter.com/Prathkum/status/1605913312591548416"
+                "link": "https://twitter.com/Prathkum/status/1605913312591548416"
             }
         }
     }
